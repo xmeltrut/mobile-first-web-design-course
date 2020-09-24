@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Media queries</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            aside, header, main {
+                box-sizing: border-box;
+                padding: 24px;
+            }
+            aside {
+                background-color: #F2C2CB;
+            }
+            body {
+                font-family: "Open Sans", Helvetica, sans-serif;
+                font-size: 24px;
+            }
+            header {
+                background-color: #A7E4F2;
+            }
+            main {
+                background-color: #F2E98F;
+            }
+            @media (min-width: 600px) {
+                aside {
+                    float: right;
+                    width: 25%;
+                }
+                main {
+                    float: left;
+                    width: 75%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>Header</header>
+        <main>Body</main>
+        <aside>Sidebar</aside>
+    </body>
+</html>

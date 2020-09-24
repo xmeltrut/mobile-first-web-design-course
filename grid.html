@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grid</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            aside, footer, header, main {
+                box-sizing: border-box;
+                padding: 24px;
+            }
+            aside {
+                background-color: #F2C2CB;
+            }
+            body {
+                display: grid;
+                font-family: "Open Sans", Helvetica, sans-serif;
+                font-size: 24px;
+                grid-gap: 24px;
+                margin: 24px;
+            }
+            footer {
+                background-color: #B3C6F2;
+            }
+            header {
+                background-color: #A7E4F2;
+            }
+            main {
+                background-color: #F2E98F;
+            }
+            @media (min-width: 600px) {
+                body {
+                    grid-template-columns: 3fr 1fr;
+                }
+                footer, header {
+                    grid-column-end: span 2;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>Header</header>
+        <main>Body</main>
+        <aside>Sidebar</aside>
+        <footer>Footer</footer>
+    </body>
+</html>
